@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<body>
+ <div class="container">
+ <h1 class="title">Добро пожаловать!</h1>
+ <p class="description">Здесь вы сможете проверить и освежить свои профессиональные знания</p>
+     <div style="text-align: center;"><label class="description" for="product-select">Выберите тему:</label>
+<select id="product-select" name="product"><option value="">____________________________</option>        
+</select></div><br>
+ <a href="{% url 'quiz' %}" class="start-button">Старт</a>
+ </div>
+{% endblock %}

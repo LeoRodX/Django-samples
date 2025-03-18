@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+ <div class="container">
+ <h1 class="title">Ваш результат</h1>
+ <p class="result-message">Вы набрали <strong>{{ score }}</strong> баллов из <strong
+ >{{ total }} </strong>!</p>
+ <a href="{% url 'quiz' %}" class="retry-button">Повторить попытку</a>
+ <a href="{% url 'index' %}" class="home-button">Выбрать другую тему</a>
+ <a href="{% url 'index' %}" class="home-button">Закрыть</a>
+ </div>
+{% endblock %}
